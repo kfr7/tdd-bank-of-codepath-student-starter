@@ -11,22 +11,22 @@ Your job is to wire up the React UI to interact with the already built Express A
 ### Goals
 
 By the end of this lab you will be able to...
-- [ ] Make HTTP requests from React applications using `axios`
-- [ ] Handle asynchronous functions using `async/await`
-- [ ] Leverage the `useEffect` hook to make API requests when components mount
-- [ ] Store data pulled from a remote API locally with the `useState` hook
-- [ ] Create `onClick` handlers for buttons
-- [ ] Manage the internal state of a form input with use state and an `onChange` handler.
-- [ ] Create `onSubmit` handlers for forms
-- [ ] Use React Router to navigate between pages
-- [ ] Create dynamic routes with React Router
+- [x] Make HTTP requests from React applications using `axios`
+- [x] Handle asynchronous functions using `async/await`
+- [x] Leverage the `useEffect` hook to make API requests when components mount
+- [x] Store data pulled from a remote API locally with the `useState` hook
+- [x] Create `onClick` handlers for buttons
+- [x] Manage the internal state of a form input with use state and an `onChange` handler.
+- [x] Create `onSubmit` handlers for forms
+- [x] Use React Router to navigate between pages
+- [x] Create dynamic routes with React Router
 - [ ] Craft HTTP requests that use route parameter from the `useParams` hook
 
 ### Application Features
 
 #### Core Features
 
-- [ ] Users can add new transaction to bank: Takes in description, category, and amount. Be sure to specify what unit of currency the amount is in (i.e USD, cents, etc.)
+- [x] Users can add new transaction to bank: Takes in description, category, and amount. Be sure to specify what unit of currency the amount is in (i.e USD, cents, etc.)
 - [ ] New transactions will be updated in the activity section with most recent at the bottom.
 - [ ] Allows users to search in activities based on key words or phrases.
 
