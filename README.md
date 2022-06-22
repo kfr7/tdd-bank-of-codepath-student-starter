@@ -27,7 +27,7 @@ By the end of this lab you will be able to...
 #### Core Features
 
 - [x] Users can add new transaction to bank: Takes in description, category, and amount. Be sure to specify what unit of currency the amount is in (i.e USD, cents, etc.)
-- [ ] New transactions will be updated in the activity section with most recent at the bottom.
+- [x] New transactions will be updated in the activity section with most recent at the bottom.
 - [ ] Allows users to search in activities based on key words or phrases.
 
 #### Stretch Features
@@ -174,11 +174,11 @@ Start by installing the core dependencies for this project.
         - [x] Otherwise, render the `BankActivity` component. It should always render the `AddTransaction` component.
     - Error
       - [x] If the `Home.jsx` component receives any defined value for its `error` prop, it should render an error message inside of an `h2` element with the className of `error`.
-  - [ ] Filtering transactions
-    - [ ] The `Home.jsx` component should create a `filteredTransactions` array using its `transactions` prop.
-    - [ ] If its `filterInputValue` prop is NOT an empty string:
-      - [ ] It should filter the transactions based on whether or not the lowercased `description` property of a transaction contains the lowercased `filterInputValue`
-      - [ ] Otherwise, it should just be the raw array passed as the `transactions` prop.
+  - [x] Filtering transactions
+    - [x] The `Home.jsx` component should create a `filteredTransactions` array using its `transactions` prop.
+    - [x] If its `filterInputValue` prop is NOT an empty string:
+      - [x] It should filter the transactions based on whether or not the lowercased `description` property of a transaction contains the lowercased `filterInputValue`
+      - [x] Otherwise, it should just be the raw array passed as the `transactions` prop.
     - [x] The `filteredTransactions` array should be passed to the `BankActivity` component as its `transactions` prop.
 
 ### Step 5: The `AddTransaction.jsx` component
@@ -208,7 +208,7 @@ This component is responsible for adding a new transaction to the Bank. We'll be
         - [x] It should take a `change` event as its single argument.
         - [x] That function should then update individual fields in the form using the `change` event.
         - [x] Pass that function to the `AddTransactionForm` component as its `handleOnFormFieldChange` prop.
-        - [ ] Go ahead and pass the other required props to the `AddTransactionForm` component as indicated by the tests
+        - [x] Go ahead and pass the other required props to the `AddTransactionForm` component as indicated by the tests
 
 #### In the `AddTransactionForm` component
 
@@ -235,15 +235,15 @@ This component is responsible for adding a new transaction to the Bank. We'll be
 
 #### Iteration in JSX
 
-  - [ ] The `BankActivity.jsx` component should iterate over its `transactions` prop and render a `TransactionRow` for each one. That component should render JSX wrapped by an element with the `className` of `transaction-row`.
+  - [x] The `BankActivity.jsx` component should iterate over its `transactions` prop and render a `TransactionRow` for each one. That component should render JSX wrapped by an element with the `className` of `transaction-row`.
   - [ ] It should also iterate over its `transfers` prop and render a `TransferRow` for each one. That component should render JSX wrapped by an element with the `className` of `transfer-row`.
 
 #### Dynamic `Link` component with `react-router-dom`
     
-  - [ ] Import the `Link` component from `react-router-dom`
-  - [ ] The `TransactionRow` component in the `BankActivity.jsx` file should render JSX wrapped by a `Link` component from `react-router-dom` that links to the correct transaction detail page
-  - [ ] Make sure to dynamically create the `to` prop based on the `id` of each transaction
-  - [ ] Clicking on the `TransactionRow` component should redirect to the `TransactionDetail` page for that transaction
+  - [x] Import the `Link` component from `react-router-dom`
+  - [x] The `TransactionRow` component in the `BankActivity.jsx` file should render JSX wrapped by a `Link` component from `react-router-dom` that links to the correct transaction detail page
+  - [x] Make sure to dynamically create the `to` prop based on the `id` of each transaction
+  - [x] Clicking on the `TransactionRow` component should redirect to the `TransactionDetail` page for that transaction
 
 ### Step 7: The `TransactionDetail` component
 

@@ -27,7 +27,7 @@ export default function Home( { transactions,
         const transfersMetadata = await axios.get("http://localhost:3001/bank/transfers")
         // console.log("1:", transactionsMetadata.data.transactions)
         setTransactions(transactionsMetadata.data.transactions)
-        // console.log("2:", transfersMetadata.data.transfers)   
+        console.log("2:", transfersMetadata.data.transfers)   
         setTransfers(transfersMetadata.data.transfers)    
       }
       catch (err)
@@ -87,6 +87,7 @@ export default function Home( { transactions,
     })
   }
   // not sure why not passing tests, I correctly call it and it does do the post request
+ 
 
   return (
     <div className="home">
@@ -96,7 +97,8 @@ export default function Home( { transactions,
                       setForm={setNewTransactionForm}
                       handleOnSubmit={handleOnCreateTransaction} />
       {error !== "" ? <h2 className="error">{error}</h2> : null}
-      {isLoading ? <h1>Loading...</h1> : <BankActivity transactions={filteredTransactions} />}
+      {isLoading ? <h1>Loading...</h1> : <BankActivity transactions={filteredTransactions}
+                                                      />}
     </div>
   )
 }

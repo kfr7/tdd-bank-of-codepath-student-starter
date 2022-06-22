@@ -2,6 +2,9 @@ import * as React from "react"
 import { formatAmount, formatDate } from "../../utils/format"
 import "./TransactionDetail.css"
 
+// this would be using params and making another get request
+// don't have time to code anymore today but just making sure I would
+// know how to do everything
 export default function TransactionDetail() {
   return (
     <div className="transaction-detail">
